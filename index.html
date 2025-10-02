@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio de Camille Truchon</title>
+  <style>
+    :root{
+      --bg:#0A1A2F;        /* bleu foncé */
+      --card:#152A44;      /* cartes légèrement plus claires */
+      --accent:#0b74de;    /* accent bleu */
+      --text:#f1f1f1;      /* texte clair */
+      --radius:12px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;background:var(--bg);color:var(--text);line-height:1.5;padding:24px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px;}
+    .brand{font-weight:700;font-size:1.5rem;}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:12px;}
+    nav a{text-decoration:none;color:var(--text);padding:8px;border-radius:8px;}
+    nav a:hover{background:rgba(255,255,255,0.1);}
+    main{max-width:1000px;margin:0 auto;display:grid;gap:18px;}
+    .hero{background:linear-gradient(180deg,rgba(11,116,222,0.3),transparent);padding:24px;border-radius:var(--radius);}
+    .card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(0,0,0,0.3);}
+    footer{text-align:center;color:#aaa;font-size:0.9rem;padding:18px 0;}
+    @media (max-width:900px){ nav ul{display:none;} }
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600;}
+    form label{display:block;font-size:0.9rem;margin-top:10px;}
+    input[type="text"], input[type="email"], textarea{
+      width:100%;padding:10px;border-radius:8px;border:1px solid #444;background:#0d1f38;color:#f1f1f1;margin-top:6px;font-size:0.95rem;
+    }
+    h2{border-bottom:1px solid rgba(255,255,255,0.2);padding-bottom:6px;margin-bottom:12px;}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Camille Truchon</div>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#aspirations">Aspirations</a></li>
+        <li><a href="#personnalite">Personnalité</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Accueil -->
+    <section id="accueil" class="hero card">
+      <h1>Bienvenue sur mon portfolio</h1>
+      <p>Je suis Camille Truchon, 20 ans. Passionnée de sport et de courses automobiles, je suis sociable mais aussi réservée, toujours prête à développer des projets sur le long terme.</p>
+      <p><strong>Qualités :</strong> Avenante, souriante, créative</p>
+      <p><strong>Valeurs :</strong> Rigueur, esprit d’équipe</p>
+    </section>
+
+    <!-- À propos -->
+    <section id="apropos" class="card">
+      <h2>À propos de moi</h2>
+      <p>Nouvelle saison, je démarre ma première année en tant que coach, accompagnant une équipe de jeunes joueurs depuis 3 ans. J'aime développer les projets sur le long terme et mener un projet à sa finalité.</p>
+      <p><em>Anecdote :</em> Coaching, direction de projet et accompagnement : gérer un groupe et voir les résultats sur le long terme est ma plus grande motivation.</p>
+    </section>
+
+    <!-- Parcours -->
+    <section id="parcours" class="card">
+      <h2>Parcours</h2>
+      <ul>
+        <li>Licence commerciale à l’ILEPS</li>
+        <li>Projet en Écosse : travail de groupe, attention au détail pour un projet réaliste et ambitieux</li>
+        <li>Sport : joueur de volley → esprit d’équipe, coaching → gestion de projets, directeur communication club → créativité et diversification</li>
+        <li>Stages : Office de tourisme (gestion de projet), Snipes (ventes)</li>
+        <li>Alternances : GoPark (organisation et gestion de la pression), Comité départemental volley (organisation, facturation, devis)</li>
+      </ul>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="card">
+      <h2>Compétences</h2>
+      <p><strong>Techniques :</strong> Gestion de projet, création d’événements, Excel, Canva, réseaux sociaux</p>
+      <p><strong>Soft skills :</strong> Écoute, persévérance, organisation</p>
+      <p><strong>Compétences mises en avant :</strong> Gestion de projet, création d’événements, écoute, persévérance, organisation</p>
+    </section>
+
+    <!-- Réalisations -->
+    <section id="realisations" class="card">
+      <h2>Réalisations & fiertés</h2>
+      <ul>
+        <li>Avoir rejoint l’alternance souhaitée, avec plus de temps pour réaliser mes projets personnels</li>
+        <li>Surmonter un deuil, montrer ma résilience et ma solidité</li>
+        <li>Projets futurs : année sabbatique et investissement immobilier pour autofinancement</li>
+      </ul>
+    </section>
+
+    <!-- Aspirations -->
+    <section id="aspirations" class="card">
+      <h2>Aspirations</h2>
+      <ul>
+        <li>Type de poste : bureau, commercial, CDI</li>
+        <li>Secteur : sport (passion)</li>
+        <li>Compétences à développer : autonomie, adaptation, anglais</li>
+      </ul>
+    </section>
+
+    <!-- Personnalité -->
+    <section id="personnalite" class="card">
+      <h2>Personnalité professionnelle</h2>
+      <p><strong>Citation :</strong> "Dans la vie je ne perds jamais, soit je gagne, soit j’apprends."</p>
+      <p><strong>Symbole :</strong> Spirale</p>
+      <p><strong>Centre d’intérêt :</strong> Volley-ball</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <form action="#" method="post" onsubmit="alert('Le formulaire n\\'envoie rien sans backend.'); return false;">
+        <label for="nom">Nom</label>
+        <input id="nom" name="nom" type="text" placeholder="Votre nom" required />
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" placeholder="exemple@domaine.com" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+
+        <div style="margin-top:12px">
+          <button type="submit" class="btn">Envoyer</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="card">
+    <p>© <span id="year"></span> Camille Truchon — Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
